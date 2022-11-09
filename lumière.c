@@ -1,9 +1,9 @@
-int detecte_lumière()
+int detecte_lumiere()
 {
-    P1DIR &= ~BIT4; // capteur de lumière
+    P1DIR &= ~BIT4; // capteur de lumiï¿½re
 
 
-    ADC_Demarrer_conversion(0x04); // le port P1.4 correspond au capteur de lumière
+    ADC_Demarrer_conversion(0x04); // le port P1.4 correspond au capteur de lumiï¿½re
     lum = ADC_Lire_resultat();
 
     return lum;
@@ -12,13 +12,7 @@ int detecte_lumière()
 void lumiere()
 
 {
-    P1DIR &= ~BIT4; // capteur de lumière
-
-
-    ADC_Demarrer_conversion(0x04); // le port P1.4 correspond au capteur de lumière
-    lum = ADC_Lire_resultat();
-
-    while (detecte_lumière < 200)
+    while (detecte_lumiere < 200)
         {
             tourner_droite();
         }
