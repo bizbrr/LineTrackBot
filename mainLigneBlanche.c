@@ -5,6 +5,8 @@
 
 unsigned int val=0;
 
+//#define BASE_PWM_WHEEL 200 /* Valeur nominal pour les roues */
+//#define TURN_PWM_WHEEL 100 /* Valeur virage pour les roues */
 
 /**
  * main.c
